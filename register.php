@@ -87,9 +87,7 @@ include_once 'layout/head.php';
             </div>
             <!-- Password input -->
             <div class="form-floating mb-4">
-              <input type="password" class="form-control form-control-lg border border-start-0 border-top-0 border-end-0 rounded-0" id="inputPassword" name="inputPassword" placeholder="กรอกรหัสผ่าน" value="<?php if (isset($_GET['password'])) {
-                                                                                                                                                                                                                echo decode($_GET['password'], secret_key());
-                                                                                                                                                                                                              } ?>">
+              <input type="password" class="form-control form-control-lg border border-start-0 border-top-0 border-end-0 rounded-0" id="inputPassword" name="inputPassword" placeholder="กรอกรหัสผ่าน" >
               <label for="inputPassword" class="form-label">รหัสผ่าน</label>
             </div>
 

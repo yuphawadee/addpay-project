@@ -33,7 +33,7 @@ if (isset($_GET["deleteexpenses"])) {
 </nav>
 <hr>
 <div class="container bg-secondary-addpay rounded-5">
-    <div class="main-body py-md-5 px-md-1 text-white">
+    <div class="main-body py-md-2 px-md-1 text-white">
         <div class="container">
             <div id="" class="py-4 p-md-5 text-white">
                 <div class="text-center text-md-start">

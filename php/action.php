@@ -51,7 +51,7 @@ function encode($message, $encryption_key)
 
     $encryption_iv = '1234567891011121';
 
-    $encrypted = openssl_encrypt($message, $ciphering, $encryption_key, $options, $encryption_iv); 
+    $encrypted = openssl_encrypt($message, $ciphering, $encryption_key, $options, $encryption_iv);
 
     return $encrypted;
 }
@@ -77,15 +77,14 @@ function decode($message, $decryption_key)
     $ciphering = "AES-128-CTR";
 
     // $decryption_key = "BS539TDGZF3ND71";
-  
+
     $options = 0;
-  
+
     $decryption_iv = '1234567891011121';
-  
-    $decrypted = openssl_decrypt ($message, $ciphering, $decryption_key, $options, $decryption_iv); 
-  
+
+    $decrypted = openssl_decrypt($message, $ciphering, $decryption_key, $options, $decryption_iv);
+
     return $decrypted;
-    
 }
 
 // Validate Email
@@ -167,12 +166,7 @@ function register()
         $_SESSION['error'] = "กรุณากรอกรหัสผ่าน";
         header("Location: ../register?$data");
         exit;
-    } else {
-        if (!preg_match("/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+-=])[a-zA-Z0-9!@#$%^&*()_+-=]{0,8}$/", $password)) {
-            $_SESSION['error'] = 'รหัสผ่านจำเป็นต้องมี ตัวพิมพ์ใหญ่ไม่น้อยกว่า 1 ตัว, ตัวอักษรพิเศษ 1 ตัว และมีความยาวไม่เกิน 8 ตัวอักษร';
-            header("Location: ../register?$data");
-            exit;
-        }
+    
     }
 
     if (empty($confirm)) {

@@ -24,7 +24,7 @@ if (isset($_GET["deleteinvbill"])) {
 <hr>
 
 <div class="container bg-secondary-addpay rounded-5">
-    <div class="main-body p-md-5 text-white">
+    <div class="main-body text-white">
         <div class="container">
             <div id="listinvbill" class="p-3 p-md-5 text-white">
                 <div class="text-center text-md-start">

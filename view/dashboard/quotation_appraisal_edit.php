@@ -34,7 +34,7 @@ if (isset($_POST['action'])) {
             $check = $query->fetch_assoc();
 
             if ($check) {
-                $_SESSION['error'] = "เลขที่ใบเสนอราคากลางนี้มีในระบบแล้ว!";
+                $_SESSION['error'] = "เลขที่ใบเสนอราคากออกนี้มีในระบบแล้ว!";
                 echo "<script> window.history.back()</script>";
                 exit;
             } else {
@@ -88,7 +88,7 @@ function edit_quo()
             $conn->query($query);
         }
 
-        $_SESSION['success'] = "แก้ไขใบเสนอราคากลางสำเร็จ!";
+        $_SESSION['success'] = "แก้ไขใบเสนอราคากออกสำเร็จ!";
         echo "<script> window.location.href='?page=quo';</script>";
         exit;
     } else {
@@ -119,8 +119,8 @@ function edit_quo()
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index">หน้าหลัก</a></li>
-        <li class="breadcrumb-item"><a href="?page=quo">ใบเสนอราคากลาง</a></li>
-        <li class="breadcrumb-item active" aria-current="page">สร้างใบเสนอราคากลาง</li>
+        <li class="breadcrumb-item"><a href="?page=quo">ใบเสนอราคากออก</a></li>
+        <li class="breadcrumb-item active" aria-current="page">สร้างใบเสนอราคากออก</li>
     </ol>
 </nav>
 <hr>
@@ -130,7 +130,7 @@ function edit_quo()
         <div id="paperquotation" class="container p-3 p-md-5">
             <div class="p-4 p-md-5 bg-white rounded-5 shadow-lg">
                 <div class="text-center text-md-start text-dark my-3">
-                    <h3>สร้างใบเสนอราคากลาง</h3>
+                    <h3>สร้างใบเสนอราคากออก</h3>
                 </div>
                 <form method="post" id="quotation_form" action="?page=quo_edit&editquo=<?php echo encode($row['quo_id'], secret_key()); ?>" class="mt-md-5">
                     <div class="row align-items-center text-dark px-md-5 mb-3">
@@ -176,7 +176,7 @@ function edit_quo()
                     </div>
                     <div class="row align-items-center text-dark px-md-5 mb-3">
                         <div class="col-md-3">
-                            <h6 for="itemtitle" class="col-form-label">แก้ไขรายการใบเสนอราคากลาง :</h6>
+                            <h6 for="itemtitle" class="col-form-label">แก้ไขรายการใบเสนอราคากออก :</h6>
                         </div>
                         <div class="border border-secondary rounded-3 p-4">
                             <div class="table-responsive">

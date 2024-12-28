@@ -13,43 +13,43 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <h6 class="dropdown-header">เมนูใบเสนอราคา : กลาง/เข้า/ออก</h6>
+                        <h6 class="dropdown-header">เมนูใบเสนอราคา : เข้า/ออก</h6>
                     </li>
-                    <li><a class="dropdown-item" href="?page=quo">ใบเสนอราคา-กลาง</a></li>
+                    <!-- <li><a class="dropdown-item" href="?page=quo">ใบเสนอราคา-กลาง</a></li> -->
                     <li><a class="dropdown-item" href="?page=quo_in">ใบเสนอราคา-เข้า</a></li>
                     <li><a class="dropdown-item" href="?page=quo_out">ใบเสนอราคา-ออก</a></li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link text-white" href="?page=">
                     <span></span>
                     งานที่จะประมูล
                 </a>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
                 <a class="nav-link text-white" href="?page=">
                     <span></span>
                     ดำเนินการทำเล่ม
                 </a>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
                 <a class="nav-link text-white" href="?page=">
                     <span data-feather="bar-chart-2"></span>
                     ทำ Power Point
                 </a>
-            </li>
+            </li> -->
             <li class="nav-item">
-                <a class="nav-link text-white" href="?page=">
+                <a class="nav-link text-white" href="?page=contract">
                     <span data-feather="layers"></span>
                     สัญญาแนบเข้า
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link text-white" href="?page=">
                     <span data-feather="layers"></span>
                     Project Planning
                 </a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     หนังสือ
@@ -69,7 +69,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="?page=">
+                <a class="nav-link text-white" href="?page=archives">
                     <span data-feather="layers"></span>
                     เอกสารสำคัญ
                 </a>

@@ -71,9 +71,9 @@ require_once 'php/key.inc.php';
                 <button type="submit" name="submit" class="btn p-3 mt-3 text-white rounded-pill fs-5 fw-bold btn-addpay">เข้าสู่ระบบ <i class="fa-solid fa-right-to-bracket"></i></button>
               </div>
             </div>
-            <p class="text-center"> ยังไม่มีบัญชีผู้ใช้ ?
+            <!-- <p class="text-center"> ยังไม่มีบัญชีผู้ใช้ ?
               <a href="register" class="text-decoration-none">สมัครสมาชิก</a>
-            </p>
+            </p> -->
           </form>
         </div>
       </div>

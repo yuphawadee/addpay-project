@@ -26,7 +26,7 @@ if (isset($_POST['action'])) {
 
         if ($check) {
             
-            $_SESSION['error'] = "เลขที่ใบเสนอราคากลางนี้มีในระบบแล้ว!";
+            $_SESSION['error'] = "เลขที่ใบเสนอราคาออกนี้มีในระบบแล้ว!";
             unset($_SESSION['svinput']);unset($_SESSION['deli']);unset($_SESSION['spe']);
             if($input_quo_deli>0){$_SESSION['deli'] = $input_quo_deli;}
             if($input_quo_specialdis>0){$_SESSION['spe'] = $input_quo_specialdis;}
@@ -70,7 +70,7 @@ if (isset($_POST['action'])) {
                     $conn->query($query);
                 }
 
-                $_SESSION['success'] = "บันทึกใบเสนอราคากลางสำเร็จ!";
+                $_SESSION['success'] = "บันทึกใบเสนอราคาออกสำเร็จ!";
                 unset($_SESSION['svinput']);unset($_SESSION['deli']);unset($_SESSION['spe']);
                 echo "<script> window.location.href='?page=quo'</script>";
                 exit;
@@ -126,8 +126,8 @@ table tr td:first-child::before {
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index">หน้าหลัก</a></li>
-        <li class="breadcrumb-item"><a href="?page=quo">ใบเสนอราคากลาง</a></li>
-        <li class="breadcrumb-item active" aria-current="page">สร้างใบเสนอราคากลาง</li>
+        <li class="breadcrumb-item"><a href="?page=quo">ใบเสนอราคาออก</a></li>
+        <li class="breadcrumb-item active" aria-current="page">สร้างใบเสนอราคาออก</li>
     </ol>
 </nav>
 <hr>
@@ -137,7 +137,7 @@ table tr td:first-child::before {
         <div id="paperquotation" class="container p-3 p-md-5">
             <div class="p-4 p-md-5 bg-white rounded-5 shadow-lg">
                 <div class="text-center text-md-start text-dark my-3">
-                    <h3>สร้างใบเสนอราคากลาง</h3>
+                    <h3>สร้างใบเสนอราคาออก</h3>
                 </div>
                 <form method="post" id="quotation_form" action="?page=quo_add" class="form-anticlear mt-md-5">
                     <div class="row align-items-center text-dark px-md-5 mb-3">
@@ -186,7 +186,7 @@ table tr td:first-child::before {
                     </div>
                     <div class="row align-items-center text-dark px-md-5 mb-3">
                         <div class="col-md-3">
-                            <h6>รายการใบเสนอราคากลาง :</h6>
+                            <h6>รายการใบเสนอราคาออก :</h6>
                         </div>
                         <div class="border border-secondary rounded-3 p-4">
                             <div class="table-responsive">

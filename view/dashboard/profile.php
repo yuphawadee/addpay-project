@@ -5,7 +5,7 @@
                 <div class="card-body">
                     <div class="d-flex flex-column align-items-center text-center">
                         <?php if($user['img']) { ?>
-                            <img src="image/profile/<?= $user['img'] ?>" alt="profile" class="img-thumbnail rounded-circle bg-primary-addpay p-2 border-0 shadow" style="width: 300px;">
+                            <img src="image/profile/<?= $user['img'] ?>" alt="profile" class="img-thumbnail rounded-circle bg-primary-addpay p-2 border-0 shadow" style="width: 300px; height: 300px; object-fit: cover;">
                         <?php }else { ?>
                             <img src="image/profile/cat.png" alt="profile" class="img-thumbnail rounded-circle bg-primary-addpay p-2 border-0 shadow" style="width: 300px;">
                         <?php } ?>

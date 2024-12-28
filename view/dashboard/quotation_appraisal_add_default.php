@@ -25,7 +25,7 @@ if (isset($_POST['action'])) {
         $check = $query->fetch_assoc();
 
         if ($check) {
-            $_SESSION['error'] = "เลขที่ใบเสนอราคากลางนี้มีในระบบแล้ว!";
+            $_SESSION['error'] = "เลขที่ใบเสนอราคาออกนี้มีในระบบแล้ว!";
             echo "<script>window.history.back();</script>";
             exit;
             
@@ -49,7 +49,7 @@ if (isset($_POST['action'])) {
                     $conn->query($query);
                 }
 
-                $_SESSION['success'] = "บันทึกใบเสนอราคากลางสำเร็จ!";
+                $_SESSION['success'] = "บันทึกใบเสนอราคาออกสำเร็จ!";
                 echo "<script> window.location.href='?page=quo'</script>";
                 exit;
             } else {
@@ -84,8 +84,8 @@ table tr td:first-child::before {
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index">หน้าหลัก</a></li>
-        <li class="breadcrumb-item"><a href="?page=quo">ใบเสนอราคากลาง</a></li>
-        <li class="breadcrumb-item active" aria-current="page">สร้างใบเสนอราคากลาง</li>
+        <li class="breadcrumb-item"><a href="?page=quo">ใบเสนอราคาออก</a></li>
+        <li class="breadcrumb-item active" aria-current="page">สร้างใบเสนอราคาออก</li>
     </ol>
 </nav>
 <hr>
@@ -95,7 +95,7 @@ table tr td:first-child::before {
         <div id="paperquotation" class="container p-3 p-md-5">
             <div class="p-4 p-md-5 bg-white rounded-5 shadow-lg">
                 <div class="text-center text-md-start text-dark my-3">
-                    <h3>สร้างใบเสนอราคากลาง</h3>
+                    <h3>สร้างใบเสนอราคาออก</h3>
                 </div>
                 <form method="post" id="quotation_form" action="?page=quo_add" class="form-anticlear mt-md-5">
                     <div class="row align-items-center text-dark px-md-5 mb-3">
@@ -144,7 +144,7 @@ table tr td:first-child::before {
                     </div>
                     <div class="row align-items-center text-dark px-md-5 mb-3">
                         <div class="col-md-3">
-                            <h6>รายการใบเสนอราคากลาง :</h6>
+                            <h6>รายการใบเสนอราคาออก :</h6>
                         </div>
                         <div class="border border-secondary rounded-3 p-4">
                             <div class="table-responsive">
